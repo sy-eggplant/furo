@@ -2,9 +2,11 @@
 
 <head>
   <title>風呂掲示板</title>
+  <link rel="shortcut icon" href="img/fabicon.png">
   <style type=text/css>
     div#header{background-color:#ffffff;}
   </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
 </form>
 
 <h2>投稿リスト</h2>
-
+<div class="back"><a href="index.html"><img src="img/back.png" width="60%" height="zoom:0.6"></a></div>
 <!-- bootstrap CDN -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
