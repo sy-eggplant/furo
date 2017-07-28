@@ -1,0 +1,88 @@
+.hero-header{
+	background-image: url(../img/furo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+// 湯気を散りばめる
+@function yuge($max-top-vh: 100) {
+  @return #{random(50)}vw -#{random($max-top-vh)}vh #{120 + random(50)}px lighten(black, random(10) + 90%);
+}
+
+// のぼってくる湯気
+@keyframes bottom-yuge {
+  0% {
+    transform: translateX(-20vh);
+  }
+  50% {
+  	transform: translateX(0vh);
+  }
+  100% {
+    transform: translateX(-20vh);
+  }
+}
+
+@keyframes moving-yuge {
+  0% {
+    opacity: 0;
+    top: 200vh;
+    //transform: translateY(0vh);
+  }
+  50% {
+    opacity: 0.8;
+    top: 150vh;
+    //transform: translateY(-50vh);
+  }
+  99%, 100% {
+    opacity: 0;
+    top: 100vh;
+    //transform: translateY(-100vh);
+  }
+}
+
+.yuge {
+	animation-name: bottom-yuge;
+	animation-duration: 18s;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: yuge(30), yuge(30), yuge(30), yuge(30), yuge(30), yuge(30), yuge(30), yuge(30), yuge(30), yuge(30), 
+              yuge(20), yuge(20), yuge(20), yuge(20), yuge(20), yuge(20), yuge(20), yuge(20), yuge(20), yuge(20);
+  height: 10vh;
+  opacity: 0.6;
+  position: fixed;
+  top: 120vh;
+  width: 70vw;
+}
+
+.moving-yuge {
+  opacity: 0;
+  animation-name: moving-yuge;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: transparent;
+  box-shadow: yuge(200), yuge(200), yuge(200), yuge(200), yuge(200), yuge(200), yuge(200),
+  						yuge(200), yuge(200), yuge(200), yuge(200), yuge(200), yuge(200), yuge(200);
+  $size: 140;
+  width: #{$size * 2}px;
+  height: #{$size}px;
+  position: fixed;
+  top: 200vh;
+  left: 25vw;
+  //$delay: 5000 + random(3000);
+  //animation-delay: #{$delay}ms;
+  animation-duration: 12s;
+}
+
+.back {
+	bottom: 10px;
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	-khtml-opacity: 0.85;
+	opacity:0.85;
+	position: fixed;
+	right: 10px;
+}

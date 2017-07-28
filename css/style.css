@@ -1,14 +1,96 @@
+.hero-header {
+  background-image: url(../img/furo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+@-webkit-keyframes bottom-yuge {
+  0% {
+    -webkit-transform: translateX(-20vh);
+    transform: translateX(-20vh); }
+  50% {
+    -webkit-transform: translateX(0vh);
+    transform: translateX(0vh); }
+  100% {
+    -webkit-transform: translateX(-20vh);
+    transform: translateX(-20vh); } }
+
+@keyframes bottom-yuge {
+  0% {
+    -webkit-transform: translateX(-20vh);
+    transform: translateX(-20vh); }
+  50% {
+    -webkit-transform: translateX(0vh);
+    transform: translateX(0vh); }
+  100% {
+    -webkit-transform: translateX(-20vh);
+    transform: translateX(-20vh); } }
+
+@-webkit-keyframes moving-yuge {
+  0% {
+    opacity: 0;
+    top: 200vh; }
+  50% {
+    opacity: 0.8;
+    top: 150vh; }
+  99%, 100% {
+    opacity: 0;
+    top: 100vh; } }
+
+@keyframes moving-yuge {
+  0% {
+    opacity: 0;
+    top: 200vh; }
+  50% {
+    opacity: 0.8;
+    top: 150vh; }
+  99%, 100% {
+    opacity: 0;
+    top: 100vh; } }
+
+.yuge {
+  -webkit-animation-name: bottom-yuge;
+  animation-name: bottom-yuge;
+  -webkit-animation-duration: 18s;
+  animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 16vw -7vh 166px whitesmoke, 29vw -15vh 150px #f7f7f7, 3vw -22vh 145px whitesmoke, 36vw -4vh 134px #fafafa, 30vw -9vh 150px #f0f0f0, 44vw -24vh 151px #f7f7f7, 41vw -11vh 133px #ebebeb, 46vw -6vh 156px white, 34vw -3vh 144px #ededed, 9vw -27vh 163px #e8e8e8, 43vw -12vh 124px #fcfcfc, 22vw -3vh 124px #ebebeb, 5vw -16vh 130px whitesmoke, 42vw -4vh 143px #f7f7f7, 8vw -17vh 147px #f0f0f0, 40vw -17vh 142px #fcfcfc, 22vw -20vh 148px #e8e8e8, 33vw -19vh 154px #f7f7f7, 34vw -1vh 122px #ededed, 46vw -3vh 150px white;
+  box-shadow: 16vw -7vh 166px whitesmoke, 29vw -15vh 150px #f7f7f7, 3vw -22vh 145px whitesmoke, 36vw -4vh 134px #fafafa, 30vw -9vh 150px #f0f0f0, 44vw -24vh 151px #f7f7f7, 41vw -11vh 133px #ebebeb, 46vw -6vh 156px white, 34vw -3vh 144px #ededed, 9vw -27vh 163px #e8e8e8, 43vw -12vh 124px #fcfcfc, 22vw -3vh 124px #ebebeb, 5vw -16vh 130px whitesmoke, 42vw -4vh 143px #f7f7f7, 8vw -17vh 147px #f0f0f0, 40vw -17vh 142px #fcfcfc, 22vw -20vh 148px #e8e8e8, 33vw -19vh 154px #f7f7f7, 34vw -1vh 122px #ededed, 46vw -3vh 150px white;
+  height: 10vh;
+  opacity: 0.6;
+  position: fixed;
+  top: 120vh;
+  width: 70vw; }
+
+.moving-yuge {
+  opacity: 0;
+  -webkit-animation-name: moving-yuge;
+  animation-name: moving-yuge;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background-color: transparent;
+  -webkit-box-shadow: 8vw -126vh 156px #ebebeb, 23vw -120vh 123px #f2f2f2, 47vw -116vh 163px #f7f7f7, 28vw -154vh 130px #ebebeb, 1vw -34vh 168px whitesmoke, 46vw -31vh 155px #fafafa, 27vw -22vh 154px #ebebeb, 31vw -108vh 164px #ebebeb, 37vw -109vh 168px #fafafa, 4vw -172vh 147px #ebebeb, 44vw -196vh 158px #ededed, 48vw -147vh 152px #ebebeb, 42vw -52vh 170px #ededed, 11vw -49vh 168px #fcfcfc;
+  box-shadow: 8vw -126vh 156px #ebebeb, 23vw -120vh 123px #f2f2f2, 47vw -116vh 163px #f7f7f7, 28vw -154vh 130px #ebebeb, 1vw -34vh 168px whitesmoke, 46vw -31vh 155px #fafafa, 27vw -22vh 154px #ebebeb, 31vw -108vh 164px #ebebeb, 37vw -109vh 168px #fafafa, 4vw -172vh 147px #ebebeb, 44vw -196vh 158px #ededed, 48vw -147vh 152px #ebebeb, 42vw -52vh 170px #ededed, 11vw -49vh 168px #fcfcfc;
+  width: 280px;
+  height: 140px;
+  position: fixed;
+  top: 200vh;
+  left: 25vw;
+  -webkit-animation-duration: 12s;
+  animation-duration: 12s; }
+
 .back {
- position: fixed;
- bottom: 10px;
- right: 10px;
-
-
- filter:alpha(opacity=85);
- -moz-opacity:0.85;
- -khtml-opacity: 0.85;
- opacity:0.85;
-
-
-
-}
+  bottom: 10px;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+  position: fixed;
+  right: 10px; }
