@@ -11,7 +11,7 @@
 <div class="container">
 <div id="header">
 
-<h1>入部希望やお問い合わせはこちらから</h1>
+<h1>お風呂について話しましょう〜！ふろらぶ</h1>
 
 <h2>投稿</h2>
 <form action="bbs.php" method="post" role="form">
